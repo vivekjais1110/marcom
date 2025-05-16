@@ -162,6 +162,7 @@ npm start
 
 > Use the following collection to test endpoints:
 > [📥 marcom.postman\_collection.json](https://github.com/vivekjais1110/marcom/blob/main/marcom.postman_collection.json)
+✅ Includes saved response examples for quick reference!
 
 ---
 
