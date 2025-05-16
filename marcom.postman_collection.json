@@ -1,0 +1,1173 @@
+{
+	"info": {
+		"_postman_id": "ad4aec30-8aeb-4a8d-82f1-561d29a35076",
+		"name": "marcom",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38312840"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"item": [
+				{
+					"name": "http://localhost:6000/api/v1/register",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Vineet\",\r\n  \"email\": \"vineet@gmail.com\",\r\n  \"password\": \"vineet@123\",\r\n  \"role\": \"member\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/v1/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:6000/api/v1/register Copy",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Vineet\",\r\n  \"email\": \"vineet@gmail.com\",\r\n  \"password\": \"vineet@123\",\r\n  \"role\": \"member\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:6000/api/v1/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "6000",
+									"path": [
+										"api",
+										"v1",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "256"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"100-KAANl97nbYK4f6RQRwwDqhHxTZg\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 16 May 2025 18:53:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User registered\",\n    \"user\": {\n        \"id\": 5,\n        \"name\": \"Vineet\",\n        \"email\": \"vineet@gmail.com\",\n        \"password\": \"$2b$10$qodO1iTpwQzxRD7s06q7ZeLvfRemW6r/NvvoEJzui8CW5rYJRDBGm\",\n        \"role\": \"member\",\n        \"updatedAt\": \"2025-05-16T18:53:32.279Z\",\n        \"createdAt\": \"2025-05-16T18:53:32.279Z\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "http://localhost:6000/api/v1/login",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"anshika@gmail.com\",\r\n  \"password\": \"anshika@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/v1/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "trainer login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"vivek@gmail.com\",\r\n  \"password\": \"vivek@123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:6000/api/v1/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "6000",
+									"path": [
+										"api",
+										"v1",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "178"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b2-ADWRlf5ue3XC0gaGNgbPMnoJWZw\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 16 May 2025 19:01:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Login successful\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNzQ3NDIyMTA0LCJleHAiOjE3NDc0MjU3MDR9.BtQ8mOc3huOFMTrIZlCgqqObu2AnwCxBYVLnAyyNBok\"\n}"
+						},
+						{
+							"name": "member login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"anshika@gmail.com\",\r\n  \"password\": \"anshika@123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:6000/api/v1/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "6000",
+									"path": [
+										"api",
+										"v1",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "178"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b2-DuNgzob8BGEdawdTOfEFQN7m98M\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 16 May 2025 19:19:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Login successful\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNzQ3NDIzMTQ1LCJleHAiOjE3NDc0MjY3NDV9.U3Bj0qwzu73BVdxZtmJZe7gZ0PO4mmbqTNgPq1HTfkk\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Add slot (Trainer only)",
+			"item": [
+				{
+					"name": "add slot",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNzQ3NDIyMTA0LCJleHAiOjE3NDc0MjU3MDR9.BtQ8mOc3huOFMTrIZlCgqqObu2AnwCxBYVLnAyyNBok",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"date_time\": \"2025-05-24T14:30:00Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/v1/addSlot",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"addSlot"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "add slot",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNzQ3NDIyMTA0LCJleHAiOjE3NDc0MjU3MDR9.BtQ8mOc3huOFMTrIZlCgqqObu2AnwCxBYVLnAyyNBok",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"date_time\": \"2025-05-24T14:30:00Z\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:6000/api/v1/addSlot",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "6000",
+									"path": [
+										"api",
+										"v1",
+										"addSlot"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "195"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c3-OgvnEqPwIkh3mrMsp+txf7m2MvI\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 16 May 2025 19:05:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Slot added\",\n    \"slot\": {\n        \"is_booked\": false,\n        \"slot_id\": 5,\n        \"date_time\": \"2025-05-24T14:30:00.000Z\",\n        \"trainer_id\": 4,\n        \"updatedAt\": \"2025-05-16T19:05:48.926Z\",\n        \"createdAt\": \"2025-05-16T19:05:48.926Z\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Get Available Slots (Members can view)",
+			"item": [
+				{
+					"name": "Get All available list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNzQ3NDIyMTA0LCJleHAiOjE3NDc0MjU3MDR9.BtQ8mOc3huOFMTrIZlCgqqObu2AnwCxBYVLnAyyNBok",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:6000/api/v1/getAvailableSlots",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"getAvailableSlots"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All available list",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNzQ3NDIyMTA0LCJleHAiOjE3NDc0MjU3MDR9.BtQ8mOc3huOFMTrIZlCgqqObu2AnwCxBYVLnAyyNBok",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:6000/api/v1/getAvailableSlots",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "6000",
+									"path": [
+										"api",
+										"v1",
+										"getAvailableSlots"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1220"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4c4-mK3pUngK/7JLDNntYX0DfdCW5Co\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 16 May 2025 19:12:49 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Available slots fetched successfully.\",\n    \"data\": [\n        {\n            \"slot_id\": 1,\n            \"trainer_id\": 4,\n            \"date_time\": \"2025-05-20T14:30:00.000Z\",\n            \"is_booked\": false,\n            \"createdAt\": \"2025-05-16T19:05:18.000Z\",\n            \"updatedAt\": \"2025-05-16T19:05:18.000Z\",\n            \"trainer\": {\n                \"id\": 4,\n                \"name\": \"Vivek Jaiswal\",\n                \"email\": \"vivek@gmail.com\"\n            }\n        },\n        {\n            \"slot_id\": 2,\n            \"trainer_id\": 4,\n            \"date_time\": \"2025-05-21T14:30:00.000Z\",\n            \"is_booked\": false,\n            \"createdAt\": \"2025-05-16T19:05:31.000Z\",\n            \"updatedAt\": \"2025-05-16T19:05:31.000Z\",\n            \"trainer\": {\n                \"id\": 4,\n                \"name\": \"Vivek Jaiswal\",\n                \"email\": \"vivek@gmail.com\"\n            }\n        },\n        {\n            \"slot_id\": 3,\n            \"trainer_id\": 4,\n            \"date_time\": \"2025-05-22T14:30:00.000Z\",\n            \"is_booked\": false,\n            \"createdAt\": \"2025-05-16T19:05:36.000Z\",\n            \"updatedAt\": \"2025-05-16T19:05:36.000Z\",\n            \"trainer\": {\n                \"id\": 4,\n                \"name\": \"Vivek Jaiswal\",\n                \"email\": \"vivek@gmail.com\"\n            }\n        },\n        {\n            \"slot_id\": 4,\n            \"trainer_id\": 4,\n            \"date_time\": \"2025-05-23T14:30:00.000Z\",\n            \"is_booked\": false,\n            \"createdAt\": \"2025-05-16T19:05:43.000Z\",\n            \"updatedAt\": \"2025-05-16T19:05:43.000Z\",\n            \"trainer\": {\n                \"id\": 4,\n                \"name\": \"Vivek Jaiswal\",\n                \"email\": \"vivek@gmail.com\"\n            }\n        },\n        {\n            \"slot_id\": 5,\n            \"trainer_id\": 4,\n            \"date_time\": \"2025-05-24T14:30:00.000Z\",\n            \"is_booked\": false,\n            \"createdAt\": \"2025-05-16T19:05:48.000Z\",\n            \"updatedAt\": \"2025-05-16T19:05:48.000Z\",\n            \"trainer\": {\n                \"id\": 4,\n                \"name\": \"Vivek Jaiswal\",\n                \"email\": \"vivek@gmail.com\"\n            }\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Top Up Wallet (Member only)",
+			"item": [
+				{
+					"name": "Top Up Wallet (Member only)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNzQ3NDIyMTA0LCJleHAiOjE3NDc0MjU3MDR9.BtQ8mOc3huOFMTrIZlCgqqObu2AnwCxBYVLnAyyNBok",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"amount\": 800\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/v1/topUpWallet",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"topUpWallet"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Top Up Wallet (Member only)",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNzQ3NDIyMTA0LCJleHAiOjE3NDc0MjU3MDR9.BtQ8mOc3huOFMTrIZlCgqqObu2AnwCxBYVLnAyyNBok",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"amount\": 800\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:6000/api/v1/topUpWallet",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "6000",
+									"path": [
+										"api",
+										"v1",
+										"topUpWallet"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "57"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"39-e62PPcpZVfC9Bp+OwTarv+xXB8w\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 16 May 2025 19:15:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Wallet topped up successfully\",\n    \"balance\": 800\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Book a Slot  (Member only)",
+			"item": [
+				{
+					"name": "Book a Slot (Member only)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNzQ3NDIzMTQ1LCJleHAiOjE3NDc0MjY3NDV9.U3Bj0qwzu73BVdxZtmJZe7gZ0PO4mmbqTNgPq1HTfkk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"slot_id\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/v1/bookSlot",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"bookSlot"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Top Up Wallet (Member only) Copy",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNzQ3NDIzMTQ1LCJleHAiOjE3NDc0MjY3NDV9.U3Bj0qwzu73BVdxZtmJZe7gZ0PO4mmbqTNgPq1HTfkk",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"slot_id\": 3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:6000/api/v1/bookSlot",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "6000",
+									"path": [
+										"api",
+										"v1",
+										"bookSlot"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "185"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b9-SFeIZ16NfVXHLzxcNL3we5ZQkEU\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 16 May 2025 19:25:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Slot booked successfully!\",\n    \"booking\": {\n        \"booking_id\": 1,\n        \"slot_id\": 3,\n        \"member_id\": 3,\n        \"trainer_id\": 4,\n        \"updatedAt\": \"2025-05-16T19:25:05.829Z\",\n        \"createdAt\": \"2025-05-16T19:25:05.829Z\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Trainer sees booked slots",
+			"item": [
+				{
+					"name": "Get Trainer Bookings (Trainer only)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNzQ3NDIyMTA0LCJleHAiOjE3NDc0MjU3MDR9.BtQ8mOc3huOFMTrIZlCgqqObu2AnwCxBYVLnAyyNBok",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:6000/api/v1/getTrainerBookings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"getTrainerBookings"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Trainer Bookings (Trainer only)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNzQ3NDIyMTA0LCJleHAiOjE3NDc0MjU3MDR9.BtQ8mOc3huOFMTrIZlCgqqObu2AnwCxBYVLnAyyNBok",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:6000/api/v1/getTrainerBookings",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "6000",
+									"path": [
+										"api",
+										"v1",
+										"getTrainerBookings"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "438"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1b6-G8MJm2t3lCjfKSavIVZPJfVcyIo\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 16 May 2025 19:29:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Bookings fetched successfully.\",\n    \"data\": [\n        {\n            \"booking_id\": 1,\n            \"slot_id\": 3,\n            \"member_id\": 3,\n            \"trainer_id\": 4,\n            \"createdAt\": \"2025-05-16T19:25:05.000Z\",\n            \"updatedAt\": \"2025-05-16T19:25:05.000Z\",\n            \"slot\": {\n                \"slot_id\": 3,\n                \"trainer_id\": 4,\n                \"date_time\": \"2025-05-22T14:30:00.000Z\",\n                \"is_booked\": true,\n                \"createdAt\": \"2025-05-16T19:05:36.000Z\",\n                \"updatedAt\": \"2025-05-16T19:25:05.000Z\"\n            },\n            \"member\": {\n                \"id\": 3,\n                \"name\": \"Anshika\",\n                \"email\": \"anshika@gmail.com\",\n                \"role\": \"member\"\n            }\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Bonus features",
+			"item": [
+				{
+					"name": "View Wallet Balance",
+					"item": [
+						{
+							"name": "View Wallet Balance",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNzQ3NDIyMTA0LCJleHAiOjE3NDc0MjU3MDR9.BtQ8mOc3huOFMTrIZlCgqqObu2AnwCxBYVLnAyyNBok",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:6000/api/v1/getWalletBalance",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "6000",
+									"path": [
+										"api",
+										"v1",
+										"getWalletBalance"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Wallet Balance",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "authorization",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNzQ3NDIyMTA0LCJleHAiOjE3NDc0MjU3MDR9.BtQ8mOc3huOFMTrIZlCgqqObu2AnwCxBYVLnAyyNBok",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:6000/api/v1/getWalletBalance",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "6000",
+											"path": [
+												"api",
+												"v1",
+												"getWalletBalance"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "65"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"41-5WSoqSK/QopI7lrWrI3TnVCt5bQ\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 16 May 2025 19:40:25 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Wallet balance fetched successfully.\",\n    \"balance\": 1600\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Pagination View Available slots",
+					"item": [
+						{
+							"name": "Availableslots_pagination",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNzQ3NDIyMTA0LCJleHAiOjE3NDc0MjU3MDR9.BtQ8mOc3huOFMTrIZlCgqqObu2AnwCxBYVLnAyyNBok",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:6000/api/v1/getAvailableslots_pagination?page=1&limit=2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "6000",
+									"path": [
+										"api",
+										"v1",
+										"getAvailableslots_pagination"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "limit",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Availableslots_pagination",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "authorization",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNzQ3NDIyMTA0LCJleHAiOjE3NDc0MjU3MDR9.BtQ8mOc3huOFMTrIZlCgqqObu2AnwCxBYVLnAyyNBok",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:6000/api/v1/getAvailableslots_pagination?page=1&limit=2",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "6000",
+											"path": [
+												"api",
+												"v1",
+												"getAvailableslots_pagination"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "limit",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "524"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"20c-M/H5UP/XCbHOBTYsL4J62+BG+hw\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 16 May 2025 19:53:18 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Available slots fetched successfully.\",\n    \"data\": [\n        {\n            \"slot_id\": 1,\n            \"trainer_id\": 4,\n            \"date_time\": \"2025-05-20T14:30:00.000Z\",\n            \"is_booked\": false,\n            \"createdAt\": \"2025-05-16T19:05:18.000Z\",\n            \"updatedAt\": \"2025-05-16T19:05:18.000Z\",\n            \"trainer\": {\n                \"id\": 4,\n                \"name\": \"Vivek Jaiswal\",\n                \"email\": \"vivek@gmail.com\"\n            }\n        },\n        {\n            \"slot_id\": 2,\n            \"trainer_id\": 4,\n            \"date_time\": \"2025-05-21T14:30:00.000Z\",\n            \"is_booked\": false,\n            \"createdAt\": \"2025-05-16T19:05:31.000Z\",\n            \"updatedAt\": \"2025-05-16T19:05:31.000Z\",\n            \"trainer\": {\n                \"id\": 4,\n                \"name\": \"Vivek Jaiswal\",\n                \"email\": \"vivek@gmail.com\"\n            }\n        }\n    ]\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Book a Slot & Real Mail Send",
+					"item": [
+						{
+							"name": "Book a Slot & Real Mail Send",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNzQ3NDIzMTQ1LCJleHAiOjE3NDc0MjY3NDV9.U3Bj0qwzu73BVdxZtmJZe7gZ0PO4mmbqTNgPq1HTfkk",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"slot_id\": 3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:6000/api/v1/bookSlot",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "6000",
+									"path": [
+										"api",
+										"v1",
+										"bookSlot"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Book a Slot & Real Mail Send",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "authorization",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNzQ3NDIzMTQ1LCJleHAiOjE3NDc0MjY3NDV9.U3Bj0qwzu73BVdxZtmJZe7gZ0PO4mmbqTNgPq1HTfkk",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"slot_id\": 3\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:6000/api/v1/bookSlot",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "6000",
+											"path": [
+												"api",
+												"v1",
+												"bookSlot"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "185"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"b9-SFeIZ16NfVXHLzxcNL3we5ZQkEU\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 16 May 2025 19:25:05 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Slot booked successfully!\",\n    \"booking\": {\n        \"booking_id\": 1,\n        \"slot_id\": 3,\n        \"member_id\": 3,\n        \"trainer_id\": 4,\n        \"updatedAt\": \"2025-05-16T19:25:05.829Z\",\n        \"createdAt\": \"2025-05-16T19:25:05.829Z\"\n    }\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
