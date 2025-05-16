@@ -1,5 +1,5 @@
 # Backend Developer Assessment
-> This project implements a backend system for managing users and tasks (JWT), using Node.js, Express, MongoDB, and MySQL.
+> This project implements a backend system for managing users and tasks (JWT), using Node.js, Express and MySQL.
 - [(Node JS Assignment Marcom.pdf)](https://github.com/vivekjais1110/marcom/blob/main/Node%20JS%20Assignment%20Marcom.pdf)
 
 # Features
@@ -9,6 +9,7 @@
 - MySQL for relational data.
 - Task prioritization and status management.
 - Pagination and Filter.
+- Middleware
 - Node Mailer (Real Email Sending)
 - Node-Cron for Automatic send mail Notification
 
@@ -20,6 +21,7 @@
   * View available trainer slots
   * Top-up wallet
   * Book sessions
+
 * **Trainer**
 
   * Register and log in
@@ -117,7 +119,7 @@ The project uses the following environment variables (found in .env):
 ### ✨ Bonus Features
 
 * `GET /api/v1/wallet/view` – View current wallet balance ✅
-* `getAvailableslots_pagination` – Pagination based task filter (e.g, page=1&limit=3)
+* `getAvailableslots_pagination` – Pagination based slots filter (e.g, page=1&limit=3)
 
 > NODE MAILER WITH 'node-cron' (send an email or log a notification when a task is nearing its due date)
 
@@ -127,8 +129,7 @@ For full API details, import the provided Postman collection with (save resopnse
 > Major dependencies used in this project include:
 
 - Express: Web framework.
-- Mongoose: MongoDB object modeling.
 - Sequelize: ORM for MySQL.
 - JWT: Token-based authentication.
 - Nodemailer: Email sending.
-- Node-Cron: Scheduling tasks.
+- Node-Cron: slots.
