@@ -116,6 +116,11 @@ npm start
 ├── models
 ├── middlewares
 ├── config
+├── .env
+├── .gitignore
+├── node_modules
+├── package.json
+├── package-lock.json
 └── app.js
 ```
 
