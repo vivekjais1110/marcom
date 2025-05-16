@@ -1,80 +1,96 @@
-# Backend Developer Assessment
-> This project implements a backend system for managing users and tasks (JWT), using Node.js, Express and MySQL.
-- [(Node JS Assignment Marcom.pdf)](https://github.com/vivekjais1110/marcom/blob/main/Node%20JS%20Assignment%20Marcom.pdf)
+# 🚀 Mini Wellness Booking System (Backend Developer Assessment)
 
-# Features
-- User registration and login.
-- JWT-based authentication.
-- CRUD operations for tasks.
-- MySQL for relational data.
-- Task prioritization and status management.
-- Pagination and Filter.
-- Middleware
-- Node Mailer (Real Email Sending)
-- Node-Cron for Automatic send mail Notification
+> A complete backend system to manage wellness session bookings for **Members** and **Trainers** with wallet handling, email notifications, cron reminders, and secure authentication.
 
-### 👤 User Roles
+📄 [Node JS Assignment Marcom.pdf](https://github.com/vivekjais1110/marcom/blob/main/Node%20JS%20Assignment%20Marcom.pdf)
 
-* **Member**
+---
 
-  * Register and log in
-  * View available trainer slots
-  * Top-up wallet
-  * Book sessions
+## 🔧 Tech Stack
 
-* **Trainer**
+* **Node.js** & **Express.js**
+* **MySQL** + **Sequelize ORM**
+* **JWT** for secure authentication
+* **Nodemailer** for real-time emails
+* **Node-Cron** for scheduled email reminders
 
-  * Register and log in
-  * Add available slots
-  * View bookings for their slots
+---
+
+## ✨ Features
+
+### 👥 User Roles
+
+#### 👤 Member
+
+* Register & Login
+* View available trainer slots
+* Top-up wallet balance
+* Book wellness sessions
+
+#### 🧑‍🏫 Trainer
+
+* Register & Login
+* Add session slots
+* View bookings for their sessions
 
 ### 💳 Wallet System
 
-* Wallet created automatically on signup with ₹0
-* **Top-up Wallet** (Mock Payment API)
-* Deduct ₹200 when booking a session
-* Booking fails if insufficient balance
-* **View Wallet Balance** (Optional Bonus ✅)
+* Wallet auto-created on signup (default ₹0)
+* 🔁 Top-up functionality (mock payment)
+* 💸 Deduct ₹200 per booking
+* ❌ Booking fails if funds are insufficient
+* ✅ View wallet balance *(Bonus)*
 
-### 🗓️ Session Booking
+### 🗓️ Session & Slot Booking
 
-* Members can book available slots
-* Slots become unavailable once booked
-* Trainers can view all bookings for their slots
+* Book only unreserved slots
+* Slot marked as unavailable after booking
+* Trainers can check bookings tied to their slots
 
-### 📩 Email Notifications
+### 📬 Email Notifications
 
-* **Real Email Confirmation** on booking (Bonus ✅)
-* Email sent using `Nodemailer`
+* ✅ **Real Emails Sent** upon booking confirmation
+* Powered by **Nodemailer**
 
-### 🕒 Cron Job (Bonus ✅)
+### 🕒 Slot Deadline Reminders *(Bonus)*
 
-* Scheduled job using **node-cron** to send reminders for slots approaching in 3 days
+* ⚙️ Runs daily via `node-cron`
+* Sends reminder email 3 days before slot time
 
-# Bonus Features: 
-- Real email integration using `Nodemailer` & View wallet balance. 
-- Implement slots deadlines notifications (send an email notification when a slots is nearing 
-its date_time). 
-- Implement pagination for retrieving the list of slots. 
+---
 
-# Setup and Installation
-~ Ensure the following tools are installed on your system:
-- Node.js (v12+)
-- MySQL server installed.
+## 🎁 Bonus Highlights
 
-# Clone the repository:
-```sh
+* ✅ Real-time Email confirmations with Nodemailer
+* ✅ View wallet balance endpoint
+* ✅ Pagination in slot listing
+
+---
+
+## ⚙️ Setup & Installation
+
+Ensure you have:
+
+* ✅ Node.js (v12+)
+* ✅ MySQL running locally
+
+### 📥 Clone the Repo
+
+```bash
 git clone https://github.com/vivekjais1110/marcom.git
 ```
-# Install dependencies:
-```sh
+
+### 📦 Install Dependencies
+
+```bash
 npm install
 ```
 
-# Configure environment variables:
-Create a .env file in the root directory.
-Use the example below or customize as needed:
-```sh
+### 🛠️ Environment Variables
+
+Create a `.env` file in the root:
+
+```env
 PORT=6000
 JWT_SECRET=marcom
 SQL_DB=marcom
@@ -83,53 +99,83 @@ SQL_PASSWORD=root
 SQL_HOST=localhost
 SQL_DIALECT=mysql
 ```
-# Start the server:
-```sh
+
+### ▶️ Start Server
+
+```bash
 npm start
 ```
 
-# Environment Variables
-The project uses the following environment variables (found in .env):
+---
 
-- PORT: Port for the backend server.
-- JWT_SECRET: Secret for signing JWT tokens.
-- SQL_DB, SQL_USER, SQL_PASSWORD, SQL_HOST, SQL_DIALECT: MySQL database configuration.
+## 📂 Project Structure
 
-## 🧪 API Endpoints
+```
+├── controllers
+├── routes
+├── models
+├── middlewares
+├── config
+└── app.js
+```
+
+---
+
+## 📡 API Endpoints
 
 ### 🧍 User APIs
 
-* `POST /api/v1/register` – Register new user (Member or Trainer)
-* `POST /api/v1/login` – User login
+* `POST /api/v1/register` – Register (Member/Trainer)
+* `POST /api/v1/login` – Login & receive JWT
 
 ### 💰 Wallet APIs
 
-* `POST /api/v1/topUpWallet` – Top-up wallet
+* `POST /api/v1/topUpWallet` – Add funds
+* `GET /api/v1/wallet/view` – 💳 View wallet balance ✅
 
 ### 🗓️ Slot APIs
 
-* `POST /api/v1/addSlot` – Add new slot (Trainer only) ✅
-* `GET /api/v1/getAvailableSlots` – Get available slots for members
+* `POST /api/v1/addSlot` – Trainer adds a new slot ✅
+* `GET /api/v1/getAvailableSlots` – View open slots
+* `GET /api/v1/getAvailableslots_pagination?page=1&limit=3` – 📚 Paginated slot list ✅
 
 ### 📘 Booking APIs
 
-* `POST /api/v1/bookSlot` – Book a session
-* `GET /api/v1/getTrainerBookings` – Trainer can view their bookings
+* `POST /api/v1/bookSlot` – Book a session slot
+* `GET /api/v1/getTrainerBookings` – Trainer views their bookings
 
-### ✨ Bonus Features
+---
 
-* `GET /api/v1/wallet/view` – View current wallet balance ✅
-* `getAvailableslots_pagination` – Pagination based slots filter (e.g, page=1&limit=3)
+## 🔁 Scheduled Jobs
 
-> NODE MAILER WITH 'node-cron' (send an email or log a notification when a task is nearing its due date)
+* `node-cron` checks for upcoming slots daily at 10:00 AM
+* Sends reminder email for slots happening in next 3 days
 
-For full API details, import the provided Postman collection with (save resopnse example) ([marcom.postman_collection.json](https://github.com/vivekjais1110/marcom/blob/main/marcom.postman_collection.json)) into Postman.
+---
 
-# Dependencies
-> Major dependencies used in this project include:
+## 📬 Postman Collection
 
-- Express: Web framework.
-- Sequelize: ORM for MySQL.
-- JWT: Token-based authentication.
-- Nodemailer: Email sending.
-- Node-Cron: slots.
+> Use the following collection to test endpoints:
+> [📥 marcom.postman\_collection.json](https://github.com/vivekjais1110/marcom/blob/main/marcom.postman_collection.json)
+
+---
+
+## 📦 Key Dependencies
+
+* `express` – Web server
+* `sequelize` – MySQL ORM
+* `jsonwebtoken` – Secure auth
+* `nodemailer` – Email service
+* `node-cron` – Scheduled tasks
+
+---
+
+## 💡 Developer Tips
+
+* Ensure MySQL server is running
+* Add your Gmail or Mailtrap credentials in `.env`
+
+
+---
+
+🧠 **Built with logic, love, and a touch of creativity for the Marcom Backend Assessment.**
